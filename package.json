@@ -1,0 +1,28 @@
+{
+  "name": "with-redux-toolkit",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently next npm:styleTypings",
+    "build": "next build",
+    "start": "next start",
+    "styleTypings": "tsm src -w"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "next": "^9.5.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "@types/react": "^16.9.52",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "concurrently": "^5.3.0",
+    "node-sass": "^4.14.1",
+    "typed-scss-modules": "^3.2.1",
+    "typescript": "^4.0.3"
+  }
+}
