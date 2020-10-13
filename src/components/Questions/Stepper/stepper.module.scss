@@ -1,0 +1,10 @@
+@import "global_variables";
+
+.stepper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .stepperItem {
+        list-style: none;
+    }
+}

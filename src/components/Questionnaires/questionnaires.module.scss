@@ -1,0 +1,14 @@
+@import "global_mixins";
+@import "global_variables";
+
+.wrapper {
+    padding: 0;
+
+    .questionnaire {
+        @include BoxShadow(2);
+        list-style: none;
+        padding: $font-size-default;
+        margin: $font-size-small;
+        word-wrap: break-word;
+    }
+}

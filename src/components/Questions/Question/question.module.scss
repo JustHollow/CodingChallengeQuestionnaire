@@ -1,0 +1,38 @@
+@import "global_variables";
+
+.question {
+    list-style: none;
+    padding: $font-size-default;
+    margin: $font-size-small;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    animation: showUp alternate 80ms;
+
+    .answers {
+        display: flex;
+        flex-wrap: wrap;
+        place-content: flex-start;
+        padding: 0;
+
+        .answerItem {
+            list-style: none;
+            margin: $font-size-nano;
+
+            &Textarea {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

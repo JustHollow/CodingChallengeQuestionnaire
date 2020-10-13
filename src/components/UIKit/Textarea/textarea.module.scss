@@ -1,0 +1,74 @@
+@import "global_variables";
+
+.wrapper {
+    position: relative;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.textareaGrid {
+    position: relative;
+    display: grid;
+    grid-template-areas: "left center right";
+    grid-template-columns: repeat(3, 1fr);
+    place-items: start;
+    width: 100%;
+}
+
+.textarea {
+    grid-column: 1 / -1;
+    color: $color-text-primary;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(#{$font-size-gaint} * 2);
+    border-radius: 8px;
+    border: 2px solid $color-brand-primary;
+    padding-left: $font-size-increased;
+    resize: vertical;
+    font-size: $font-size-default;
+
+    &::placeholder {
+        color: $color-text-secondary;
+        font-size: $font-size-default;
+    }
+
+    &.withRightIcon {
+        padding-right: calc(#{$font-size-large} + #{$font-size-default});
+    }
+    
+    &.withLeftIcon {
+        padding-left: calc(#{$font-size-large} + #{$font-size-default});
+    }
+}
+
+@mixin icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    $widthHeight: $font-size-large;
+    position: absolute;
+    pointer-events: none;
+    width: $widthHeight;
+    height: $widthHeight;
+}
+
+.rightIcon {
+    @include icon;
+    grid-area: right;
+    place-self: center flex-end;
+    padding-right: $font-size-default;
+}
+
+.leftIcon {
+    @include icon;
+    grid-area: left;
+    place-self: center flex-start;
+    padding-left: $font-size-default;
+}
+
+.title {
+    width: max-content;
+    padding-left: $font-size-default;
+    padding-bottom: $font-size-nano;
+    place-self: center flex-start;
+}

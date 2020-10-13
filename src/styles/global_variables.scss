@@ -1,0 +1,48 @@
+$color-brand-primary: hsl(176, 56%, 55%);
+$color-brand-primary-dark: darken($color-brand-primary, 8%);
+$color-brand-primary-darker: darken($color-brand-primary, 25%);
+$color-brand-primary-darkest: darken($color-brand-primary, 35%);
+$color-brand-primary-light: lighten($color-brand-primary, 10%);
+$color-brand-primary-lighter: lighten($color-brand-primary, 30%);
+$color-brand-primary-lightest: lighten($color-brand-primary, 40%);
+
+$color-brand-secondary: hsl(50, 100%, 71%);
+$color-brand-secondary-dark: darken($color-brand-secondary, 10%);
+$color-brand-secondary-darker: darken($color-brand-secondary, 20%);
+$color-brand-secondary-darkest: darken($color-brand-secondary, 30%);
+$color-brand-secondary-light: lighten($color-brand-secondary, 10%);
+$color-brand-secondary-lighter: lighten($color-brand-secondary, 30%);
+$color-brand-secondary-lightest: lighten($color-brand-secondary, 45%);
+
+$color-brand-divider: hsl(120, 50%, 90%);
+$color-brand-whitespace: hsl(120, 100%, 99%);
+
+$color-text-primary: hsl(125, 0%, 20%);
+$color-text-primary-light: lighten($color-text-primary, 20%);
+$color-text-primary-dark: darken($color-text-primary, 10%);
+$color-text-secondary: hsl(125, 0%, 60%);
+$color-text-secondary-light: lighten($color-text-secondary, 15%);
+$color-text-secondary-dark: darken($color-text-secondary, 10%);
+
+$font-size-gaint: 3rem;
+$font-size-mega: 2.75rem;
+$font-size-huge: 2.25rem;
+$font-size-large: 1.75rem;
+$font-size-big: 1.5rem;
+$font-size-increased: 1.25rem;
+$font-size-default: 1rem;
+$font-size-small: 0.875rem;
+$font-size-tiny: 0.75rem;
+$font-size-macro: 0.65rem;
+$font-size-nano: 0.35rem;
+
+$sqrt2: 1.414213562;
+
+$viewport-xs: 576px;
+$viewport-sm: 768px;
+$viewport-md: 992px;
+$viewport-lg: 1200px;
+
+$z-indexes: (
+    "nav": 500,
+);

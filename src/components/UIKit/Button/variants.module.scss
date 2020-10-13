@@ -1,0 +1,26 @@
+@import "global_variables";
+
+.text {
+    border: none;
+    padding: 6px 16px;
+    line-height: 1.75;
+}
+
+.outline {
+    @extend .text;
+    font-size: $font-size-increased;
+    border: 2px solid;
+    border-radius: $font-size-nano;
+    min-width: 220px;
+    min-height: 74px;
+    background: hsl(0, 0%, 100%);
+}
+
+.filled {
+    @extend .text;
+    font-size: $font-size-increased;
+    min-width: 220px;
+    min-height: 74px;
+    background-color: currentColor;
+    border-radius: $font-size-nano;
+}
