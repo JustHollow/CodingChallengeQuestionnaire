@@ -9,6 +9,10 @@
     place-content: center;
     animation: showUp alternate 80ms;
 
+    .headline {
+        overflow-wrap: anywhere;
+    }
+
     .answers {
         display: flex;
         flex-wrap: wrap;
@@ -19,8 +23,16 @@
             list-style: none;
             margin: $font-size-nano;
 
-            &Textarea {
+            @media screen and (max-width: $viewport-sm) {
                 flex-grow: 1;
+                display: flex;
+                button {
+                    flex-grow: 1;
+                }
+            }
+
+            &Textarea {
+                width: 100%;
             }
         }
     }

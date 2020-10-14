@@ -3,8 +3,27 @@
 .stepper {
     display: flex;
     flex-wrap: wrap;
+    place-items: center;
+    padding: 0 $font-size-nano;
 
     .stepperItem {
         list-style: none;
+        border-radius: $font-size-nano;
+
+        &:hover {
+            box-shadow: 0 0 1px 1px $color-brand-primary-light;
+        }
+
+        &Btn {
+            font-size: $font-size-small;
+            border-radius: $font-size-nano;
+
+            &Active {
+                font-weight: 600;
+                background-color: $color-brand-primary-darkest;
+                color: $color-brand-primary-lightest;
+                border-radius: $font-size-nano;
+            }
+        }
     }
 }

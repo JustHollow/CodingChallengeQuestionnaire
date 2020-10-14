@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "./layout.module.scss";
 
 type LayoutProps = React.PropsWithChildren<{
-    title?: string;
+    title?: React.ReactNode;
     headerNavigation?: React.ReactNode;
     footer?: React.ReactNode;
 }>;
@@ -25,9 +25,11 @@ const Layout = (props: LayoutProps) => {
             <main className={styles.wrapper}>
                 <header className={styles.header}>
                     {props.title}
-                    <nav className={styles.navigation}>
-                        {props.headerNavigation}
-                    </nav>
+                    {props.headerNavigation && (
+                        <nav className={styles.navigation}>
+                            {props.headerNavigation}
+                        </nav>
+                    )}
                 </header>
                 <div className={styles.content}>{props.children}</div>
                 {props.footer && (

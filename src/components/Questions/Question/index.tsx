@@ -36,9 +36,8 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
 
     return (
         <div key={question.identifier} className={styles.question}>
-            <h1>{question.headline}</h1>
-            <h3>{question.description}</h3>
-
+            <h1 className={styles.headline}>{question.headline}</h1>
+            {question.description && <h3>{question.description}</h3>}
             <ul className={styles.answers}>
                 {question.multiline && (
                     <li
@@ -48,6 +47,7 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
                         )}
                     >
                         <Textarea
+                            className={styles.answerItemTextarea}
                             onChange={(event) =>
                                 setAnswerDebounced(event.target.value)
                             }
