@@ -10,5 +10,7 @@
         padding: $font-size-default;
         margin: $font-size-small;
         word-wrap: break-word;
+        background-color: white;
+        overflow-wrap: anywhere;
     }
 }
